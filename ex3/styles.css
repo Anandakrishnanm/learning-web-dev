@@ -1,0 +1,39 @@
+
+body{
+  width: 500px;
+  height:700px;
+  margin: auto auto;
+  padding-top: 10px;
+  background-color: grey;
+  text-align: center;
+
+}
+h1,h2,p{
+ text-align: center;
+}
+
+label{
+  display: block;
+  margin: auto auto;
+  
+}
+.center{
+  margin: 0 20px;
+}
+#number-label{
+ margin-left: -105;
+}
+
+select{
+  margin:0 25px;
+}
+.educheck{
+ display: inline;
+}
+fieldset{
+  margin: auto auto;
+  border: 2px solid black;
+}
+#gender-label{
+  margin-left: -103px;
+}
