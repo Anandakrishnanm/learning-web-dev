@@ -1,0 +1,41 @@
+
+<!DOCRYPE html>
+<html lang="en">
+  <head><title>Test app</title>
+    <meta charset="utp-8">
+    <link rel="stylesheet" href="styles.css">
+  <body>
+    <header> <h1 id="title">Registration Form</h1>
+      <p id="description"> Register your account </p>
+    <form id="survey-form" method="post" action='https://survey-form.freecodecamp.rocks'>
+    <fieldset id="personal-details" name="personal-details">
+      <h2>Personal Details</h2>
+      <label id="name-label" for="name">Name: <input required placeholder="Name" class="center" type="text" id="name" name="name"></label>
+      <label id="email-label" for="email">Email: <input class="center" required type="email" placeholder="name@example.com" id="email"></lebal>
+      <label id="number-label" for="age"> Age: <input id="number" class="center" placeholder="18-23" type="number" id="number" min="18" max="23" required></label>
+      <label id="gender-label">Gender: <input type="radio" id="gender" name="gender" value="male">Male</input> <input type="radio" id="gender" name="gender" value="female">Female</label>
+      <label for="address"> Address:<textarea placeholder="adress"></textarea>
+      
+    </fieldset>
+    <fieldset id="place">
+      <h2> Place</h2>
+      <label for="place">Place: <select id="dropdown" >
+        <option> select one</option>
+        <option name="state">Alappuzha</option>
+        <option name="state">Ernakulam</option></select>
+        </label>
+    </fieldset>
+    
+    <fieldset id="educations">
+      <h2>Education</h2>
+      <label for="education"> Qualifications:</label>
+      <label class="educheck" ><input type="checkbox" name="education" value="10th">10th</label></input><label class="educheck" >
+      <input  type="checkbox" name="education" value="12th">12th</label></input>
+      <label class="educheck" ><input  type="checkbox" name="education" value="graduation">Graduation</label></input>
+    </fieldset>
+    <input type="submit" id="submit" value="submit">
+    </form>
+    </body>
+    </html>
+   
+
