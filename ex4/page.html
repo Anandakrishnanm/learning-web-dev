@@ -1,0 +1,55 @@
+<html>
+<head><title>Page-new</title>
+    <style>
+        div{
+            width: 300px;
+            height: 250px;
+            background-color: blue;
+
+        }
+    </style>
+    <script>
+        function color()
+    {
+        if(document.getElementById("box1").style.backgroundColor==="blue")
+        {
+            document.getElementById("box1").style.backgroundColor="green";
+        }
+        else{
+            document.getElementById("box1").style.backgroundColor="blue";
+        }
+    }
+        function contents() {
+            if (document.getElementById("box1").innerHTML==="Helo") 
+            {
+                document.getElementById("box1").innerHTML="Hii welcome";   
+            }
+            else
+            {
+                document.getElementById("box1").innerHTML="Helo";
+            }
+        }
+        function width() {
+            if (document.getElementById("box1").style.width==="300px")
+            {
+                document.getElementById("box1").style.width="150px";
+            }
+        else{
+                document.getElementById("box1").style.width="300px";
+        }
+        }
+    </script>
+</head>
+<BODy>
+    <div id="box1">Hello</div>
+    <a onclick="color()">
+        <input type="submit" value="click here">
+    </a>
+    <a onclick="contents()">
+        <input type="submit" value="content"> 
+    </a>
+    <a onclick="width()">
+    <input type="submit" value="width">
+    </a>
+</BODy>
+</html>
