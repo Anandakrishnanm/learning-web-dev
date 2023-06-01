@@ -1,9 +1,10 @@
-# Create a form
+# Create a Register form
 
 ## Registration-form
 Design a web page for registration
 Style it using style.css file
 
-## Login-form
-Design a web page for login
-Style it using Css
+# Create a Login Form
+
+Design a web form for login
+Style it using Css inside the html file itself. 
