@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Marklist
+        </title>
+        <style>
+            body{
+                text-align: center;
+            }
+            
+            
+        </style>
+        <script>
+            function displayall() {
+                document.getElementById("jojo").style.display="table-row";
+                document.getElementById("james").style.display="table-row";
+                document.getElementById("tom").style.display="table-row";
+               
+            }
+            function displayjojo(){
+                document.getElementById("james").style.display="none";
+                document.getElementById("tom").style.display="none";
+            }
+            function displayjames() {
+                document.getElementById("jojo").style.display="none";
+                document.getElementById("tom").style.display="none";
+            }
+            function displaytom() {
+                document.getElementById("jojo").style.display="none";
+                document.getElementById("james").style.display="none";
+                
+            }
+
+        </script>
+        
+    </head>
+    <body>
+        <table id="table1" border="1">
+           <tr><th colspan="5">Marklist</th></tr> 
+        
+            <tr id="all">
+                <td id="name"><a onclick="displayall()">All</a></td><td>Maths</td><td>English</td><td>Science</td><td>Computer</td>
+            </tr>   
+            <tr id="jojo">
+                <td id="name"><a onclick="displayjojo()">Jojo</a></td><td>87</td><td>67</td><td>86</td><td>56</td>
+            </tr> 
+            <tr id="james">
+                <td id="name"><a onclick="displayjames()">James</a></td><td>60</td><td>45</td><td>92</td><td>76</td>
+            </tr>
+            <tr id="tom">
+                <td id="name"><a onclick="displaytom()">Tom</a></td><td>56</td><td>76</td><td>55</td><td>87</td>
+            </tr>
+        </table>
+    </body>
+</html>
