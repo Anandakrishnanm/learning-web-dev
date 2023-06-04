@@ -1,0 +1,2 @@
+# A program to print all values in the array to HTML table
+uses javascript for the array declaration and uses the createElement() , .appendChild() for transferring the data using FOR loop for each iteration. 
