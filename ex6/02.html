@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    #scoreTable,td{
+     
+      border: 1px solid red;
+    }
+    #addTable{
+      margin: auto;
+      padding: auto;
+    }
+    #addTable{
+      border: 1px solid blue;
+    }
+    body{
+      text-align: center;
+    }
+  </style>
+  
+</head>
+
+<body>
+  <table id="scoreTable">
+    <tr>
+      <th>Names</th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+    </tr>
+  </table>
+
+  <table id="addTable">
+    <tr>
+      <th>Name</th>
+      <th> A </th>
+      <th> B </th>
+      <th> C </th>
+      <th> D </th>
+    </tr>
+    <tr>
+      <td><input id="input_name" type="text"></td>
+      <td><input id="input_A" type="text"></td>
+      <td><input id="input_B" type="text"></td>
+      <td><input id="input_C" type="text"></td>
+      <td><input id="input_D" type="text"></td>
+    </tr>
+  </table>
+  <button type="add" onclick="addStdBtnClick()" id="btn"> Add </button>
+
+  <script>
+    const stdtns = [
+      { name: 'Tom', A: 12, B: 34, C: 33, D: 65 },
+      { name: 'Jack', A: 14, B: 44, C: 63, D: 86 },
+      { name: 'Phil', A: 26, B: 87, C: 56, D: 72 },
+      { name: 'Collin', A: 42, B: 74, C: 32, D: 85 },
+      { name: 'Tina', A: 46, B: 50, C: 24, D: 56 }
+    ];
+
+    function renderTable(data) {
+      const table1 = document.getElementById("scoreTable");
+
+      while (document.getElementsByClassName('test-class').length > 0) {
+        const currentEl = document.getElementsByClassName('test-class')[0];
+        currentEl.parentNode.removeChild(currentEl);
+      }
+
+
+      for (let i=0; i<data.length; i++ ) {
+        let row = document.createElement("tr")
+        row.classList.add("test-class");
+
+        let cell1 = document.createElement("td")
+        let cell1txt= document.createTextNode(data[i].name)
+        cell1.appendChild(cell1txt)
+        row.appendChild(cell1)
+
+        let cell2 = document.createElement("td")
+        let cell2txt =document.createTextNode(data[i].A)
+        cell2.appendChild(cell2txt)
+        row.appendChild(cell2)
+
+        let cell3 = document.createElement("td")
+        let cell3txt = document.createTextNode(data[i].B)
+        cell3.appendChild(cell3txt)
+        row.appendChild(cell3)
+
+        let cell4 = document.createElement("td")
+        let cell4txt = document.createTextNode(data[i].C)
+        cell4.appendChild(cell4txt)
+        row.appendChild(cell4)
+
+        let cell5 = document.createElement("td")
+        let cell5txt = document.createTextNode(data[i].D)
+        cell5.appendChild(cell5txt)
+        row.appendChild(cell5)
+
+        table1.appendChild(row)
+      }
+    }
+
+    renderTable(stdtns);
+
+    function addStdt(stdData) {
+      stdtns.push(stdData);
+      renderTable(stdtns);
+    }
+
+    function addStdBtnClick() {
+      const name = document.getElementById('input_name').value
+      const aScrore = document.getElementById('input_A').value
+      const bScrore = document.getElementById('input_B').value
+      const cScrore = document.getElementById('input_C').value
+      const dScrore = document.getElementById('input_D').value
+      addStdt({
+        name: name,
+        A: aScrore,
+        B: bScrore,
+        C: cScrore,
+        D: dScrore,
+      });
+    }
+  
+  </script>
+</body>
+
+</html>
+
